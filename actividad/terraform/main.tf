@@ -7,7 +7,7 @@ resource "aws_instance" "demolocalstack" {
         nohup python -m SimpleHTTPServer 80 &
     EOF
     tags = {
-        Name = "educacionit"
+        Name = "VM-1-STAGING"
     }
 }
 
@@ -20,6 +20,6 @@ resource "aws_instance" "demolocalstack-2" {
         nohup python -m SimpleHTTPServer 80 &
     EOF
     tags = {
-        Name = "educacionit"
+        Name = "VM-2- PRODUCCION"
     }
 }
